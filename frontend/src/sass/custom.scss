@@ -1,0 +1,45 @@
+// Fonts
+@font-face {
+    font-family: "jura";
+    src: url("./fonts/Jura-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "jura";
+    src: url("./fonts/Jura-Bold.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+//custom variables
+$primary : #217075;
+$green : #33C500;
+$grey : #d1d1d1;
+$red : #F94A4A;
+$blue : #50ABFF;
+$light-blue : #C1E1FF;
+$font-family-sans-serif: "jura";
+
+
+//import bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.bg-grey{
+    background-color: $grey
+}
+
+.msg-send{
+    background-color: $blue;
+}
+
+.msg-received{
+    background-color: $light-blue;
+}
+
+.msg-connected{
+    border: map-get($border-widths, 2) $border-style $light-blue;
+    color: $secondary;
+}
+

@@ -1,0 +1,7 @@
+
+export enum MessageType {
+    CONNECTED = "CONNECTED",
+    DISCONNECTED = "DISCONNECTED",
+    TYPING = "TYPING",
+    MESSAGE = "MESSAGE"
+}
