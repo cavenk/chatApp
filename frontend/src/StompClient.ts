@@ -7,7 +7,7 @@ let client : CompatClient | null = null
 
 
 export function connectToServer(onConnect : Function) : void{
-    const sockJs : WebSocket = new SockJS("http://localhost:8080/ws")
+    const sockJs : WebSocket = new SockJS("https://chatappbackend-hkkl.onrender.com/ws")
     client = Stomp.over(sockJs)
 
     client.onConnect = (frame : IFrame) =>{
